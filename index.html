@@ -26,6 +26,18 @@
     input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
     button { background: #0074a1; color: #fff; padding: 12px; border: none; border-radius: 6px; cursor: pointer; }
     button:hover { background: #005d80; }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -77,6 +89,10 @@
       <button type="submit">Enviar</button>
     </form>
   </section>
+
+  <a href="https://wa.me/5512988740628" class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  </a>
 
   <footer>
     <p>&copy; 2025 AMK Engenharia. Todos os direitos reservados.</p>
