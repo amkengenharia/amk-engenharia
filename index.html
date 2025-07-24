@@ -1,101 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AMK Engenharia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
-    header { background: #002b45; color: #fff; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
-    .logo-container { display: flex; align-items: center; gap: 16px; }
-    .logo-container img { height: 60px; }
-    nav ul { display: flex; gap: 20px; list-style: none; }
-    nav a { color: #fff; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 40px; max-width: 1200px; margin: auto; }
-    .hero { background: #e9f3f9; text-align: center; padding: 80px 20px; }
-    .hero h1 { font-size: 2.5rem; color: #002b45; }
-    .hero p { font-size: 1.2rem; color: #444; margin-top: 10px; }
-    .servicos, .sobre { background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    h2 { font-size: 2rem; color: #002b45; margin-bottom: 20px; }
-    .servicos ul { list-style: none; padding-left: 20px; }
-    .servicos li { margin-bottom: 10px; }
-    footer { background: #002b45; color: #fff; text-align: center; padding: 20px; }
-    .contato form { display: flex; flex-direction: column; gap: 12px; max-width: 500px; }
-    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
-    button { background: #0074a1; color: #fff; padding: 12px; border: none; border-radius: 6px; cursor: pointer; }
-    button:hover { background: #005d80; }
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      z-index: 100;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .whatsapp-float img {
-      width: 100%;
-      height: auto;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo-container">
-      <img src="logo-amk.png" alt="Logo AMK Engenharia">
-      <h1>AMK Engenharia</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero" id="inicio">
-    <h1>Especialistas em Laudos Técnicos e ARTs</h1>
-    <p>Engenharia com qualidade, segurança e responsabilidade técnica.</p>
-  </section>
-
-  <section class="sobre" id="sobre">
-    <h2>Sobre a AMK Engenharia</h2>
-    <p>A AMK Engenharia é especializada na elaboração de laudos técnicos, emissão de ARTs e consultoria técnica em engenharia. Trabalhamos com responsabilidade, comprometimento e foco na excelência.</p>
-  </section>
-
-  <section class="servicos" id="servicos">
-    <h2>Nossos Serviços</h2>
-    <ul>
-      <li>Laudos Técnicos de Segurança</li>
-      <li>PMOC e Ar Condicionado</li>
-      <li>NR11, NR12, NR13</li>
-      <li>Sistemas de Exaustão para Cozinhas</li>
-      <li>Perícias Judiciais e Assistência Técnica</li>
-      <li>Responsabilidade Técnica (RT) para empresas</li>
-      <li>Laudos de Brinquedos e Parques</li>
-    </ul>
-  </section>
-
-  <section class="contato" id="contato">
-    <h2>Fale Conosco</h2>
-    <form action="https://formsubmit.co/amk.engenharia@outlook.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Nome" required>
-      <input type="email" name="email" placeholder="E-mail" required>
-      <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <a href="https://wa.me/5512988740628?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20AMK%20Engenharia." class="whatsapp-float" target="_blank" title="Fale conosco pelo WhatsApp">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-  </a>
-
-  <footer>
-    <p>&copy; 2025 AMK Engenharia. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+    header {
+      background-color: #002b45;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-container img {
+      height: 70px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-color: #e9f3f9;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem
