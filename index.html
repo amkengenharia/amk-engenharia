@@ -1,42 +1,134 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AMK Engenharia</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMK ENGENHARIA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #003049;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    header h1 span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #ffd60a;
+    }
+
+    .hero {
+      background-color: #dce3ec;
+      color: #003049;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      color: #003049;
+      margin-bottom: 10px;
+      border-left: 6px solid #ffd60a;
+      padding-left: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .section p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header img {
+        margin-bottom: 10px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">AMK Engenharia</div>
-    <nav>
-      <ul>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>  <section class="hero">
-    <h1>Especialistas em Laudos Técnicos e ARTs</h1>
-    <p>Engenharia com qualidade, segurança e responsabilidade técnica.</p>
-  </section>  <section class="conteudo" id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Laudos Técnicos</li>
-      <li>ARTs de Engenharia</li>
-      <li>Consultorias especializadas</li>
-    </ul>
-  </section>  <section class="sobre" id="sobre">
-    <h2>Sobre a AMK</h2>
-    <p>Somos uma empresa comprometida com a excelência em engenharia, entregando soluções confiáveis para nossos clientes.</p>
-  </section>  <section class="contato" id="contato">
-    <h2>Contato</h2>
-    <p>Email: amk.engenharia@outlook.com</p>
-    <p>Telefone: (12) 98874-0628</p>
-    <p><a href="https://www.instagram.com/amkarquiteturaeengenharia/" target="_blank">Instagram</a> | 
-       <a href="https://www.facebook.com/amkengenhariaoficial" target="_blank">Facebook</a> | 
-       <a href="https://www.linkedin.com/company/amk-engenharia/" target="_blank">LinkedIn</a></p>
-  </section>  <footer>
-    <p>&copy; 2025 AMK Engenharia. Todos os direitos reservados.</p>
+    <img src="logo.png" alt="Logo AMK Engenharia" />
+    <h1>
+      AMK<br />
+      ENGENHARIA
+    </h1>
+  </header>
+
+  <section class="hero">
+    <h2>Especialistas em Laudos Técnicos e ARTs</h2>
+    <p>Engenharia com qualidade, segurança e responsabilidade técnica</p>
+  </section>
+
+  <section class="section">
+    <h3>Consultoria Técnica</h3>
+    <p>Atendimento especializado para sistemas de climatização, exaustão, incêndio e brinquedos em buffets.</p>
+  </section>
+
+  <section class="section">
+    <h3>Laudos e ARTs</h3>
+    <p>Documentos técnicos elaborados conforme as normas exigidas, com entrega ágil e confiável.</p>
+  </section>
+
+  <footer>
+    © 2025 AMK Engenharia | Todos os direitos reservados
   </footer>
+
 </body>
 </html>
