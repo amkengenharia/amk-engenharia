@@ -1,87 +1,133 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AMK ENGENHARIA</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #ffffff;
       color: #001f3f;
     }
     header {
-      background-color: #002c47;
+      background-color: #001f3f;
+      padding: 40px 20px 20px 20px;
+      text-align: center;
+    }
+    header h1 {
       color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    .logo {
-      font-size: 2.5em;
-      font-weight: bold;
-    }
-    .sub-logo {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-top: 0;
-    }
-    .hero {
-      background-color: #e6f0f7;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.1em;
-      color: #333;
-    }
-    .highlight-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px 10px;
-    }
-    .highlight-line {
-      width: 8px;
-      height: 100px;
-      background-color: #f1c40f;
-      margin-right: 20px;
-    }
-    .highlight-content h2 {
+      font-size: 48px;
       margin: 0;
-      font-size: 1.8em;
+      letter-spacing: 2px;
     }
-    .highlight-content p {
-      margin-top: 10px;
-      font-size: 1.1em;
+    header h2 {
+      color: white;
+      font-size: 28px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .highlight-section {
+      background-color: #e6f0f8;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .highlight-section h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #001f3f;
+    }
+    .highlight-section p {
+      font-size: 18px;
       color: #444;
     }
+    .barra-amarela {
+      width: 60px;
+      height: 4px;
+      background-color: #ffcc00;
+      margin: 30px auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
     footer {
-      background-color: #002c47;
+      background-color: #001f3f;
       color: white;
       text-align: center;
-      padding: 15px 10px;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+    .social-links a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
-    <div class="logo">AMK</div>
-    <div class="sub-logo">ENGENHARIA</div>
-  </header>  <section class="hero">
-    <h1>Especialistas em Laudos Técnicos e ARTs</h1>
+    <h1>AMK</h1>
+    <h2>ENGENHARIA</h2>
+  </header>
+
+  <!-- Destaque -->
+  <section class="highlight-section">
+    <h2>Especialistas em Laudos Técnicos e ARTs</h2>
     <p>Engenharia com qualidade, segurança e responsabilidade técnica.</p>
-  </section>  <section class="highlight-bar">
-    <div class="highlight-line"></div>
-    <div class="highlight-content">
-      <h2>Conheça nossos serviços técnicos especializados</h2>
-      <p>Atendemos síndicos, empresas, indústrias, buffets e muito mais.</p>
+  </section>
+
+  <!-- Barra decorativa -->
+  <div class="barra-amarela"></div>
+
+  <!-- Sobre -->
+  <section>
+    <h2>Sobre a AMK Engenharia</h2>
+    <p>Somos uma empresa especializada em consultoria técnica, laudos, perícias e emissão de ARTs em diversos segmentos da engenharia. Atuamos com responsabilidade, agilidade e excelência técnica, entregando soluções sob medida para nossos clientes.</p>
+  </section>
+
+  <div class="barra-amarela"></div>
+
+  <!-- Serviços -->
+  <section>
+    <h2>Nossos Serviços</h2>
+    <ul>
+      <li>Laudos Técnicos para Engenharia Mecânica e Civil</li>
+      <li>Inspeções e Vistorias em Sistemas de Exaustão e Climatização</li>
+      <li>Regularização de Brinquedos em Buffets e Parques</li>
+      <li>Reclassificação de Montas / Desmanche Veicular</li>
+      <li>Projetos e Consultoria Técnica com Responsabilidade</li>
+    </ul>
+  </section>
+
+  <div class="barra-amarela"></div>
+
+  <!-- Contato -->
+  <section>
+    <h2>Fale Conosco</h2>
+    <p><strong>Kleber Barbosa</strong><br/>
+    Engenheiro Responsável<br/>
+    📞 (12) 98874-0628<br/>
+    📧 amk.engenharia@outlook.com<br/>
+    🌐 <a href="https://www.linkedin.com/company/amk-engenharia" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.instagram.com/amkarquiteturaeengenharia" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/amkengenhariaoficial" target="_blank">Facebook</a> |
+      <a href="https://www.linkedin.com/company/amk-engenharia" target="_blank">LinkedIn</a>
     </div>
-  </section>  <footer>
-    <p>&copy; 2025 AMK ENGENHARIA. Todos os direitos reservados.</p>
+    <p>&copy; 2025 AMK Engenharia. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
