@@ -1,99 +1,58 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbe3ea; /* azul cinzento claro */
   color: #333;
-  background-color: #fff;
 }
 
-/* Cabeçalho */
 header {
-  background-color: #001f2d;
-  color: #fff;
-  padding: 40px 20px 20px 20px;
+  background-color: white;
+  padding: 10px 0;
   text-align: center;
-  border-bottom: 4px solid #ffc107;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header h1 {
-  font-size: 36px;
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-transform: uppercase;
+.logo {
+  max-height: 80px;
+  margin-top: 10px;
 }
 
-header h2 {
-  font-size: 20px;
-  font-weight: normal;
-  margin-top: 5px;
-  letter-spacing: 1px;
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #0a2a43; /* azul escuro para contraste */
 }
 
-/* Seção principal (Hero) */
-.hero {
-  background-color: #e7f0f7; /* Azul clarinho */
-  padding: 60px 20px;
+.subtitulo {
+  font-size: 1.2em;
+  margin-top: -10px;
+  color: #666;
+}
+
+.section-destaque {
+  background-color: white;
+  padding: 40px 20px;
   text-align: center;
-  color: #0d2c3f;
-}
-  border-top: 4px solid #ffc107;
-  border-bottom: 4px solid #ffc107;
-}
-
-.hero h1 {
-  font-size: 32px;
-  color: #002b45;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 18px;
-  color: #444;
-}
-
-/* Sessões de conteúdo geral */
-section {
-  padding: 60px 20px;
-}
-
-section h2 {
-  font-size: 28px;
-  color: #002b45;
+  border-top: 4px solid #f4c542; /* traço amarelo */
   margin-bottom: 20px;
 }
 
-/* Rodapé */
-footer {
-  background-color: #001f2d;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  border-top: 4px solid #ffc107;
+.section-destaque h2 {
+  font-size: 2em;
+  color: #0a2a43;
 }
 
-/* Responsivo simples */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 28px;
-  }
+.section-destaque p {
+  font-size: 1.1em;
+  color: #444;
+  max-width: 700px;
+  margin: 10px auto 0;
+}
 
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  section h2 {
-    font-size: 22px;
-  }
+footer {
+  background-color: #0a2a43;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
