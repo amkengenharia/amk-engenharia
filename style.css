@@ -38,9 +38,11 @@ header h2 {
 
 /* Seção principal (Hero) */
 .hero {
-  background-color: #e7f0f7; /* azul suave conforme imagem aprovada */
-  padding: 80px 20px;
+  background-color: #e7f0f7; /* Azul clarinho */
+  padding: 60px 20px;
   text-align: center;
+  color: #0d2c3f;
+}
   border-top: 4px solid #ffc107;
   border-bottom: 4px solid #ffc107;
 }
