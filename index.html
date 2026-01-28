@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17226633434"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17226633434"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'AW-17226633434');
-</script>
+    gtag('config', 'AW-17226633434');
+  </script>
+
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-17226633434/7Y6hCJOfju4bENqhppZA',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="zDkLMLyzFQ5USwcM9S-BfJ_IZm4vUi3MzkGrffj7tj4" />
@@ -67,11 +85,11 @@
       color: #ffd700;
     }
     .hero {
-      background-color: #d4dfe8; /* Azul acinzentado */
+      background-color: #d4dfe8;
       color: #0f2c3f;
       text-align: center;
       padding: 70px 20px;
-      margin-top: 0 !important; /* Garante que não haja espaçamento acima */
+      margin-top: 0 !important;
     }
     .hero h2 {
       font-size: 2.4rem;
@@ -79,7 +97,7 @@
     }
     .hero p {
       font-size: 1.2rem;
-      color: #000000; /* Preto para o slogan */
+      color: #000000;
     }
     section {
       max-width: 900px;
@@ -134,18 +152,15 @@
     </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <h2>Especialistas em Laudos Técnicos e ARTs</h2>
-      <p>Engenharia com qualidade, segurança e responsabilidade técnica.</p>
-    </section>
+  <main id="inicio">
+    <div class="hero">
+      <h2>Engenharia Mecânica e Segurança do Trabalho</h2>
+      <p>Soluções Técnicas com Responsabilidade e Excelência</p>
+    </div>
 
     <section id="sobre" class="sobre">
       <h2>Sobre a AMK Engenharia</h2>
-      <p>
-        A AMK Engenharia é especializada na elaboração de laudos técnicos, emissão de ARTs e consultoria técnica em engenharia.
-        Trabalhamos com responsabilidade, comprometimento e foco na excelência.
-      </p>
+      <p>A AMK Engenharia é especializada na elaboração de laudos, vistorias e consultoria técnica. Trabalhamos com responsabilidade, comprometimento e foco na segurança das operações.</p>
     </section>
 
     <section id="servicos" class="servicos">
@@ -158,7 +173,7 @@
         <li>NR11, NR12, NR13</li>
         <li>Sistemas de Exaustão para Cozinhas</li>
         <li>Perícias Judiciais e Assistência Técnica</li>
-        <li>Responsabilidade Técnica (RT) para empresas e desmanches</li>
+        <li>Responsabilidade Técnica (RT) para empresas</li>
         <li>Laudos para Brinquedos e Playgrounds</li>
       </ul>
     </section>
@@ -166,12 +181,12 @@
     <section id="contato" class="contato">
       <h2>Fale Conosco</h2>
       <p>Entre em contato pelo WhatsApp:</p>
-      <a href="https://wa.me/5512988740628" class="botao-contato">Chamar no WhatsApp</a>
+      <a href="https://wa.me/5512988740628" class="botao-contato" onclick="return gtag_report_conversion('https://wa.me/5512988740628');">Falar com Engenheiro</a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 AMK Engenharia. Todos os direitos reservados.</p>
+    <p>&copy; 2026 AMK Engenharia. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
