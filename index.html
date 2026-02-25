@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 
-  <!-- Google Ads Tag -->
+  <!-- Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17226633434"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,41 +11,19 @@
     gtag('config', 'AW-17226633434');
   </script>
 
-  <script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17226633434/7Y6hCJOfju4bENqhppZA',
-        'value': 1.0,
-        'currency': 'BRL',
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="zDkLMLyzFQ5USwcM9S-BfJ_IZm4vUi3MzkGrffj7tj4" />
 
-  <title>AMK ENGENHARIA</title>
+  <title>AMK Engenharia | Laudos Técnicos e ART em São José dos Campos e SP</title>
 
-  <meta name="description" content="AMK Engenharia especializada em laudos técnicos, emissão de ART e responsabilidade técnica para empresas, comércios e condomínios. Atendimento com agilidade e compromisso legal.">
+  <meta name="description" content="AMK Engenharia especializada em laudos técnicos, emissão de ART, PMOC e responsabilidade técnica. Atendimento em São José dos Campos e todo o estado de São Paulo.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Roboto', sans-serif;
@@ -61,64 +39,46 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-    }
+    .logo { display: flex; align-items: center; }
 
-    .logo img {
-      height: 80px;
-      margin-right: 15px;
-    }
+    .logo img { height: 80px; margin-right: 15px; }
 
-    .logo h1 {
-      font-size: 1.6rem;
-      margin: 0;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
+    .logo h1 { font-size: 1.6rem; text-transform: uppercase; }
 
-    .logo h1 span {
-      display: block;
-      text-align: center;
-      font-size: 1.1rem;
-    }
+    .logo h1 span { display: block; text-align: center; font-size: 1.1rem; }
 
     .nav a {
       color: white;
       margin-left: 25px;
       text-decoration: none;
       font-size: 1rem;
-      transition: color 0.3s;
     }
 
-    .nav a:hover {
-      color: #ffd700;
-    }
+    .nav a:hover { color: #ffd700; }
 
     .hero {
       background-color: #d4dfe8;
-      color: #0f2c3f;
       text-align: center;
       padding: 70px 20px;
-      margin-top: 0 !important;
     }
 
-    .hero h2 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: 2.2rem;
+      color: #003049;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      color: #000000;
+      font-size: 1.1rem;
+      color: #000;
+      max-width: 800px;
+      margin: auto;
     }
 
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 60px auto;
       padding: 0 30px;
     }
@@ -130,15 +90,17 @@
       margin-bottom: 20px;
     }
 
-    ul li {
-      margin-bottom: 12px;
+    .servicos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
-    .observacao {
-      margin-top: 15px;
-      font-size: 0.95rem;
-      font-style: italic;
-      color: #555;
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
     .botao-contato {
@@ -150,11 +112,6 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .botao-contato:hover {
-      background-color: #228B22;
     }
 
     .footer {
@@ -164,79 +121,91 @@
       padding: 12px;
       font-size: 0.85rem;
     }
-
   </style>
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="logo">
-      <img src="logo-amk.png" alt="Logo AMK Engenharia" />
-      <div>
-        <h1>AMK<br><span>ENGENHARIA</span></h1>
+<header class="header">
+  <div class="logo">
+    <img src="logo-amk.png" alt="AMK Engenharia">
+    <div>
+      <h1>AMK<br><span>ENGENHARIA</span></h1>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <h1>Laudos Técnicos e Responsabilidade Técnica em São José dos Campos e Estado de São Paulo</h1>
+    <p>
+      A AMK Engenharia atua na elaboração de laudos técnicos, emissão de ART (Anotação de Responsabilidade Técnica),
+      PMOC e consultoria especializada em engenharia mecânica e segurança do trabalho,
+      atendendo empresas em São José dos Campos e em todo o estado de São Paulo.
+    </p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a AMK Engenharia</h2>
+    <p>
+      Empresa especializada em engenharia mecânica aplicada à segurança operacional,
+      com foco em conformidade normativa, responsabilidade técnica e atendimento às exigências legais
+      dos órgãos fiscalizadores.
+    </p>
+  </section>
+
+  <section id="servicos">
+    <h2>Principais Áreas de Atuação</h2>
+
+    <div class="servicos-grid">
+
+      <div class="card">
+        <h3>Laudos Técnicos</h3>
+        <p>Elaboração de laudos técnicos para empresas, comércios, condomínios e indústrias.</p>
       </div>
+
+      <div class="card">
+        <h3>Emissão de ART</h3>
+        <p>Registro de responsabilidade técnica junto ao CREA conforme exigências legais.</p>
+      </div>
+
+      <div class="card">
+        <h3>PMOC</h3>
+        <p>Plano de Manutenção, Operação e Controle de sistemas de climatização.</p>
+      </div>
+
+      <div class="card">
+        <h3>Laudos para Brinquedos</h3>
+        <p>Inspeção técnica e emissão de laudo para buffets, escolas e condomínios.</p>
+      </div>
+
     </div>
 
-    <nav class="nav">
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+    <p style="margin-top:20px; font-size:0.9rem; color:#555;">
+      *Atendimento em São José dos Campos e todo o estado de São Paulo.
+    </p>
 
-  <main id="inicio">
+  </section>
 
-    <div class="hero">
-      <h2>Laudos Técnicos, ARTs e Responsabilidade Técnica</h2>
-      <p>Atendimento para empresas, comércios e condomínios • Agilidade, precisão e compromisso legal.</p>
-    </div>
+  <section id="contato">
+    <h2>Solicite um Orçamento</h2>
+    <a href="https://wa.me/5512988740628" class="botao-contato">
+      Falar com Engenheiro
+    </a>
+  </section>
 
-    <section id="sobre">
-      <h2>Sobre a AMK Engenharia</h2>
-      <p>
-        A AMK Engenharia é especializada na elaboração de laudos, vistorias e consultoria técnica.
-        Trabalhamos com responsabilidade, comprometimento e foco na segurança das operações.
-      </p>
-    </section>
+</main>
 
-    <section id="servicos">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Laudos Técnicos de Segurança</li>
-        <li>Emissão de ART (Anotação de Responsabilidade Técnica)</li>
-        <li>AVCB e CLCB</li>
-        <li>Elevadores, Plataformas e Andaimes</li>
-        <li>PMOC e Sistemas de Ar-Condicionado</li>
-        <li>NR11 e NR12</li>
-        <li>Sistemas de Exaustão para Cozinhas Industriais</li>
-        <li>Perícias Judiciais e Assistência Técnica</li>
-        <li>Responsabilidade Técnica (RT) para empresas</li>
-        <li>Laudos para Brinquedos e Playgrounds</li>
-      </ul>
-
-      <p class="observacao">
-        *Os serviços podem variar conforme a região e exigências do órgão fiscalizador. Consulte disponibilidade.
-      </p>
-    </section>
-
-    <section id="contato">
-      <h2>Fale Conosco</h2>
-      <p>Entre em contato pelo WhatsApp:</p>
-
-      <a href="https://wa.me/5512988740628"
-         class="botao-contato"
-         onclick="return gtag_report_conversion('https://wa.me/5512988740628');">
-         Solicitar Orçamento Agora
-      </a>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 AMK Engenharia. Todos os direitos reservados.</p>
-  </footer>
+<footer class="footer">
+  <p>&copy; 2026 AMK Engenharia - São José dos Campos/SP</p>
+</footer>
 
 </body>
 </html>
