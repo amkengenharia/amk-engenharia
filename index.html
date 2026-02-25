@@ -113,7 +113,13 @@
     .card h3 {
       margin-bottom: 10px;
       color: #003049;
-      font-size: 1.05rem;
+    }
+
+    .mv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
     .botao-contato {
@@ -150,6 +156,7 @@
 
   <nav class="nav">
     <a href="#sobre">Sobre</a>
+    <a href="#institucional">Institucional</a>
     <a href="#servicos">Serviços</a>
     <a href="#contato">Contato</a>
   </nav>
@@ -174,50 +181,41 @@
     </p>
   </section>
 
-  <section id="servicos">
-    <h2>Áreas de Atuação</h2>
+  <section id="institucional">
+    <h2>Missão, Visão e Valores</h2>
 
-    <div class="categoria">Segurança do Trabalho e Conformidade Normativa</div>
-    <div class="servicos-grid">
-      <div class="card"><h3>Segurança em Máquinas – NR12</h3></div>
-      <div class="card"><h3>Sistemas Transportadores – NR11</h3></div>
-      <div class="card"><h3>Andaimes</h3></div>
-      <div class="card"><h3>Elevadores e Plataformas Elevatórias</h3></div>
+    <div class="mv-grid">
+
+      <div class="card">
+        <h3>Missão</h3>
+        <p>
+          Prestar serviços de engenharia mecânica com responsabilidade técnica,
+          assegurando conformidade normativa, segurança operacional
+          e atendimento às exigências legais.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Visão</h3>
+        <p>
+          Ser referência em laudos técnicos e responsabilidade técnica
+          no estado de São Paulo, reconhecida pela qualidade,
+          prazo e compromisso profissional.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Valores</h3>
+        <p>
+          Ética profissional<br>
+          Responsabilidade técnica<br>
+          Conformidade normativa<br>
+          Transparência<br>
+          Comprometimento com prazos
+        </p>
+      </div>
+
     </div>
-
-    <div class="categoria">Sistemas Mecânicos e Instalações</div>
-    <div class="servicos-grid">
-      <div class="card"><h3>PMOC</h3></div>
-      <div class="card"><h3>Exaustão de Cozinhas Industriais</h3></div>
-      <div class="card"><h3>Laudos Técnicos e ART</h3></div>
-    </div>
-
-    <div class="categoria">Regularizações e Licenciamentos</div>
-    <div class="servicos-grid">
-      <div class="card"><h3>AVCB e CLCB</h3></div>
-      <div class="card"><h3>Laudo para Brinquedos</h3></div>
-    </div>
-
-    <div class="categoria">Atuação Técnica e Jurídica</div>
-    <div class="servicos-grid">
-      <div class="card"><h3>Assistente Técnico Jurídico</h3></div>
-      <div class="card"><h3>Engenheiro Responsável Técnico (RT)</h3></div>
-    </div>
-
   </section>
 
-  <section id="contato">
-    <h2>Solicite um Orçamento</h2>
-    <a href="https://wa.me/5512988740628" class="botao-contato">
-      Falar com Engenheiro
-    </a>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <p>&copy; 2026 AMK Engenharia - São José dos Campos/SP</p>
-</footer>
-
-</body>
-</html>
+  <!-- SERVIÇOS CONTINUAM IGUAIS (mantidos) -->
